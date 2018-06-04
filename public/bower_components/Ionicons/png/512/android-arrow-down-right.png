@@ -1,0 +1,50 @@
+/** 
+ * @overview datejs
+ * @version 1.0.0-rc3
+ * @author Gregory Wild-Smith <gregory@wild-smith.com>
+ * @copyright 2014 Gregory Wild-Smith
+ * @license MIT
+ * @homepage https://github.com/abritinthebay/datejs
+ */
+/* 
+ * DateJS Culture String File
+ * Country Code: zh-MO
+ * Name: Chinese (Macao S.A.R.)
+ * Format: "key" : "value"
+ * Key is the en-US term, Value is the Key in the current language.
+ */
+Date.CultureStrings = Date.CultureStrings || {};
+Date.CultureStrings["zh-MO"] = {
+        "name": "zh-MO",
+        "englishName": "Chinese (Macao S.A.R.)",
+        "nativeName": "中文(澳門特别行政區)",
+        "Sunday": "星期日",
+        "Monday": "星期一",
+        "Tuesday": "星期二",
+        "Wednesday": "星期三",
+        "Thursday": "星期四",
+        "Friday": "星期五",
+        "Saturday": "星期六",
+        "Sun": "星期日",
+        "Mon": "星期一",
+        "Tue": "星期二",
+        "Wed": "星期三",
+        "Thu": "星期四",
+        "Fri": "星期五",
+        "Sat": "星期六",
+        "Su": "日",
+        "Mo": "一",
+        "Tu": "二",
+        "We": "三",
+        "Th": "四",
+        "Fr": "五",
+        "Sa": "六",
+        "S_Sun_Initial": "日",
+        "M_Mon_Initial": "一",
+        "T_Tue_Initial": "二",
+        "W_Wed_Initial": "三",
+        "T_Thu_Initial": "四",
+        "F_Fri_Initial": "五",
+        "S_Sat_Initial": "六",
+        "January": "一月",
+        "February": "二月",

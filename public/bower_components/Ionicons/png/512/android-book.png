@@ -1,0 +1,133 @@
+/** 
+ * @overview datejs
+ * @version 1.0.0-rc3
+ * @author Gregory Wild-Smith <gregory@wild-smith.com>
+ * @copyright 2014 Gregory Wild-Smith
+ * @license MIT
+ * @homepage https://github.com/abritinthebay/datejs
+ */(function () {
+	var $D = Date;
+	var lang = Date.CultureStrings ? Date.CultureStrings.lang : null;
+	var loggedKeys = {}; // for debug purposes.
+	var getText = {
+		getFromKey: function (key, countryCode) {
+			var output;
+			if (Date.CultureStrings && Date.CultureStrings[countryCode] && Date.CultureStrings[countryCode][key]) {
+				output = Date.CultureStrings[countryCode][key];
+			} else {
+				output = getText.buildFromDefault(key);
+			}
+			if (key.charAt(0) === "/") { // Assume it's a regex
+				output = getText.buildFromRegex(key, countryCode);
+			}
+			return output;
+		},
+		getFromObjectValues: function (obj, countryCode) {
+			var key, output = {};
+			for(key in obj) {
+				if (obj.hasOwnProperty(key)) {
+					output[key] = getText.getFromKey(obj[key], countryCode);
+				}
+			}
+			return output;
+		},
+		getFromObjectKeys: function (obj, countryCode) {
+			var key, output = {};
+			for(key in obj) {
+				if (obj.hasOwnProperty(key)) {
+					output[getText.getFromKey(key, countryCode)] = obj[key];
+				}
+			}
+			return output;
+		},
+		getFromArray: function (arr, countryCode) {
+			var output = [];
+			for (var i=0; i < arr.length; i++){
+				if (i in arr) {
+					output[i] = getText.getFromKey(arr[i], countryCode);
+				}
+			}
+			return output;
+		},
+		buildFromDefault: function (key) {
+			var output, length, split, last;
+			switch(key) {
+				case "name":
+					output = "en-US";
+					break;
+				case "englishName":
+					output = "English (United States)";
+					break;
+				case "nativeName":
+					output = "English (United States)";
+					break;
+				case "twoDigitYearMax":
+					output = 2049;
+					break;
+				case "firstDayOfWeek":
+					output = 0;
+					break;
+				default:
+					output = key;
+					split = key.split("_");
+					length = split.length;
+					if (length > 1 && key.charAt(0) !== "/") {
+						// if the key isn't a regex and it has a split.
+						last = split[(length - 1)].toLowerCase();
+						if (last === "initial" || last === "abbr") {
+							output = split[0];
+						}
+					}
+					break;
+			}
+			return output;
+		},
+		buildFromRegex: function (key, countryCode) {
+			var output;
+			if (Date.CultureStrings && Date.CultureStrings[countryCode] && Date.CultureStrings[countryCode][key]) {
+				output = new RegExp(Date.CultureStrings[countryCode][key], "i");
+			} else {
+				output = new RegExp(key.replace(new RegExp("/", "g"),""), "i");
+			}
+			return output;
+		}
+	};
+
+	var shallowMerge = function (obj1, obj2) {
+		for (var attrname in obj2) {
+			if (obj2.hasOwnProperty(attrname)) {
+				obj1[attrname] = obj2[attrname];
+			}
+		}
+	};
+
+	var __ = function (key, language) {
+		var countryCode = (language) ? language : lang;
+		loggedKeys[key] = key;
+		if (typeof key === "object") {
+			if (key instanceof Array) {
+				return getText.getFromArray(key, countryCode);
+			} else {
+				return getText.getFromObjectKeys(key, countryCode);
+			}
+		} else {
+			return getText.getFromKey(key, countryCode);
+		}
+	};
+	
+	var loadI18nScript = function (code) {
+		// paatterned after jQuery's getScript.
+		var url = Date.Config.i18n + code + ".js";
+		var head = document.getElementsByTagName("head")[0] || document.documentElement;
+		var script = document.createElement("script");
+		script.src = url;
+
+		var completed = false;
+		var events = {
+			done: function (){} // placeholder function
+		};
+		// Attach handlers for all browsers
+		script.onload = script.onreadystatechange = function() {
+			if ( !completed && (!this.readyState || this.readyState === "loaded" || this.readyState === "complete") ) {
+				events.done();
+				head.remo

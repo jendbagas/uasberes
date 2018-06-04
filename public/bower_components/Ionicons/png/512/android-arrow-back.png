@@ -1,0 +1,43 @@
+/** 
+ * @overview datejs
+ * @version 1.0.0-rc3
+ * @author Gregory Wild-Smith <gregory@wild-smith.com>
+ * @copyright 2014 Gregory Wild-Smith
+ * @license MIT
+ * @homepage https://github.com/abritinthebay/datejs
+ */
+/* 
+ * DateJS Culture String File
+ * Country Code: zh-CN
+ * Name: Chinese (People's Republic of China)
+ * Format: "key" : "value"
+ * Key is the en-US term, Value is the Key in the current language.
+ */
+Date.CultureStrings = Date.CultureStrings || {};
+Date.CultureStrings["zh-CN"] = {
+        "name": "zh-CN",
+        "englishName": "Chinese (People's Republic of China)",
+        "nativeName": "中文(中华人民共和国)",
+        "Sunday": "星期日",
+        "Monday": "星期一",
+        "Tuesday": "星期二",
+        "Wednesday": "星期三",
+        "Thursday": "星期四",
+        "Friday": "星期五",
+        "Saturday": "星期六",
+        "Sun": "日",
+        "Mon": "一",
+        "Tue": "二",
+        "Wed": "三",
+        "Thu": "四",
+        "Fri": "五",
+        "Sat": "六",
+        "Su": "日",
+        "Mo": "一",
+        "Tu": "二",
+        "We": "三",
+        "Th": "四",
+        "Fr": "五",
+        "Sa": "六",
+        "S_Sun_Initial": "日",
+        "M_Mon_Initi

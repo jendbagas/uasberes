@@ -1,0 +1,53 @@
+/** 
+ * @overview datejs
+ * @version 1.0.0-rc3
+ * @author Gregory Wild-Smith <gregory@wild-smith.com>
+ * @copyright 2014 Gregory Wild-Smith
+ * @license MIT
+ * @homepage https://github.com/abritinthebay/datejs
+ */
+/* 
+ * DateJS Culture String File
+ * Country Code: zu-ZA
+ * Name: Zulu (South Africa)
+ * Format: "key" : "value"
+ * Key is the en-US term, Value is the Key in the current language.
+ */
+Date.CultureStrings = Date.CultureStrings || {};
+Date.CultureStrings["zu-ZA"] = {
+        "name": "zu-ZA",
+        "englishName": "Zulu (South Africa)",
+        "nativeName": "isiZulu (iNingizimu Afrika)",
+        "Sunday": "iSonto",
+        "Monday": "uMsombuluko",
+        "Tuesday": "uLwesibili",
+        "Wednesday": "uLwesithathu",
+        "Thursday": "uLwesine",
+        "Friday": "uLwesihlanu",
+        "Saturday": "uMgqibelo",
+        "Sun": "Sun",
+        "Mon": "Mon",
+        "Tue": "Tue",
+        "Wed": "Wed",
+        "Thu": "Thu",
+        "Fri": "Fri",
+        "Sat": "Sat",
+        "Su": "Sun",
+        "Mo": "Mon",
+        "Tu": "Tue",
+        "We": "Wed",
+        "Th": "Thu",
+        "Fr": "Fri",
+        "Sa": "Sat",
+        "S_Sun_Initial": "S",
+        "M_Mon_Initial": "M",
+        "T_Tue_Initial": "T",
+        "W_Wed_Initial": "W",
+        "T_Thu_Initial": "T",
+        "F_Fri_Initial": "F",
+        "S_Sat_Initial": "S",
+        "January": "uJanuwari",
+        "February": "uFebuwari",
+        "March": "uMashi",
+        "April": "uAprhili",
+        "May": "u

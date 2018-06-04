@@ -1,0 +1,46 @@
+/* 
+ * DateJS Culture String File
+ * Country Code: kn-IN
+ * Name: Kannada (India)
+ * Format: "key" : "value"
+ * Key is the en-US term, Value is the Key in the current language.
+ */
+Date.CultureStrings = Date.CultureStrings || {};
+Date.CultureStrings["kn-IN"] = {
+        "name": "kn-IN",
+        "englishName": "Kannada (India)",
+        "nativeName": "ಕನ್ನಡ (ಭಾರತ)",
+        "Sunday": "ಭಾನುವಾರ",
+        "Monday": "ಸೋಮವಾರ",
+        "Tuesday": "ಮಂಗಳವಾರ",
+        "Wednesday": "ಬುಧವಾರ",
+        "Thursday": "ಗುರುವಾರ",
+        "Friday": "ಶುಕ್ರವಾರ",
+        "Saturday": "ಶನಿವಾರ",
+        "Sun": "ಭಾನು.",
+        "Mon": "ಸೋಮ.",
+        "Tue": "ಮಂಗಳ.",
+        "Wed": "ಬುಧ.",
+        "Thu": "ಗುರು.",
+        "Fri": "ಶುಕ್ರ.",
+        "Sat": "ಶನಿ.",
+        "Su": "ರ",
+        "Mo": "ಸ",
+        "Tu": "ಮ",
+        "We": "ಬ",
+        "Th": "ಗ",
+        "Fr": "ಶ",
+        "Sa": "ಶ",
+        "S_Sun_Initial": "ರ",
+        "M_Mon_Initial": "ಸ",
+        "T_Tue_Initial": "ಮ",
+        "W_Wed_Initial": "ಬ",
+        "T_Thu_Initial": "ಗ",
+        "F_Fri_Initial": "ಶ",
+        "S_Sat_Initial": "ಶ",
+        "January": "ಜನವರಿ",
+        "February": "ಫೆಬ್ರವರಿ",
+        "March": "ಮಾರ್ಚ್",
+        "April": "ಎಪ್ರಿಲ್",
+        "May": "ಮೇ",
+        "June": "ಜೂ�

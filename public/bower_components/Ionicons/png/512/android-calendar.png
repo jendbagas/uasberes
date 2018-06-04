@@ -1,0 +1,31 @@
+/* 
+ * DateJS Culture String File
+ * Country Code: af-ZA
+ * Name: Afrikaans (South Africa)
+ * Format: "key" : "value"
+ * Key is the en-US term, Value is the Key in the current language.
+ */
+Date.CultureStrings = Date.CultureStrings || {};
+Date.CultureStrings["af-ZA"] = {
+        "name": "af-ZA",
+        "englishName": "Afrikaans (South Africa)",
+        "nativeName": "Afrikaans (Suid Afrika)",
+        "Sunday": "Sondag",
+        "Monday": "Maandag",
+        "Tuesday": "Dinsdag",
+        "Wednesday": "Woensdag",
+        "Thursday": "Donderdag",
+        "Friday": "Vrydag",
+        "Saturday": "Saterdag",
+        "Sun": "Son",
+        "Mon": "Maan",
+        "Tue": "Dins",
+        "Wed": "Woen",
+        "Thu": "Dond",
+        "Fri": "Vry",
+        "Sat": "Sat",
+        "Su": "So",
+        "Mo": "Ma",
+        "Tu": "Di",
+        "We": "Wo",
+ 

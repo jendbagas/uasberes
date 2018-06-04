@@ -1,0 +1,48 @@
+/* 
+ * DateJS Culture String File
+ * Country Code: ja-JP
+ * Name: Japanese (Japan)
+ * Format: "key" : "value"
+ * Key is the en-US term, Value is the Key in the current language.
+ */
+Date.CultureStrings = Date.CultureStrings || {};
+Date.CultureStrings["ja-JP"] = {
+        "name": "ja-JP",
+        "englishName": "Japanese (Japan)",
+        "nativeName": "日本語 (日本)",
+        "Sunday": "日曜日",
+        "Monday": "月曜日",
+        "Tuesday": "火曜日",
+        "Wednesday": "水曜日",
+        "Thursday": "木曜日",
+        "Friday": "金曜日",
+        "Saturday": "土曜日",
+        "Sun": "日",
+        "Mon": "月",
+        "Tue": "火",
+        "Wed": "水",
+        "Thu": "木",
+        "Fri": "金",
+        "Sat": "土",
+        "Su": "日",
+        "Mo": "月",
+        "Tu": "火",
+        "We": "水",
+        "Th": "木",
+        "Fr": "金",
+        "Sa": "土",
+        "S_Sun_Initial": "日",
+        "M_Mon_Initial": "月",
+        "T_Tue_Initial": "火",
+        "W_Wed_Initial": "水",
+        "T_Thu_Initial": "木",
+        "F_Fri_Initial": "金",
+        "S_Sat_Initial": "土",
+        "January": "1月",
+        "February": "2月",
+        "March": "3月",
+        "April": "4月",
+        "May": "5月",
+        "June": "6月",
+        "July": "7月",
+        "Augu
